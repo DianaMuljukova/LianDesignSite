@@ -1,0 +1,16 @@
+.value {
+
+  &__title {
+    font-size: 18px;
+    margin: 20px 0 35px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  &__text {
+    color: $color;
+    font-size: 14px;
+    text-align: left;
+  }
+}

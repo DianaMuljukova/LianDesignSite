@@ -1,0 +1,151 @@
+.details {
+  background-color: #fafafa;
+
+  &__head {
+    padding: 20px 0;
+
+    span {
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__title {
+    font-size: 34px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 700;
+    color: $color;
+  }
+
+  &__caption {
+    font-weight: 700;
+    padding-bottom: 20px;
+
+    span {
+      margin-right: 50px;
+    }
+  }
+
+  &__content {
+    color: $color;
+    padding: 30px 0 40px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+  }
+
+  &__subject {
+    padding: 60px 0 90px;
+  }
+
+  dl {
+    padding: 40px 0;
+
+    dt {
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    dd {
+      font-size: 16px;
+      color: $color;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__photo  {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.next, .prev {
+  margin-left: 10px;
+  font-weight: 700;
+
+  &:hover {
+    color: $color;
+    cursor: pointer;
+  }
+}
+
+
+.show {
+  margin-right: 10px;
+  font-weight: 700;
+
+  &:hover {
+    color: $color;
+    cursor: pointer;
+  }
+}
+
+.fa-chevron-right,
+.fa-chevron-left {
+  font-size: 12px;
+
+  &:hover {
+    color: $color;
+    cursor: pointer;
+  }
+}
+
+#ul {
+  li {
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      transition: 0.3s;
+
+      &:hover {
+        filter: brightness(50%);
+      }
+    }
+  }
+}
+
+.share {
+  position: relative;
+
+  &-button {
+    background-color: #707070;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+
+    .fa-share-alt {
+      margin-right: 5px;
+    }
+
+    &:hover {
+      background-color: lighten(#707070, 10%);
+    }
+  }
+}
+
+.share-menu {
+  margin: 0;
+  padding: 0;
+  background-color: #e1e1e1;
+  position: absolute;
+  opacity: 0;
+  //transform: translateX(-245px);
+  transition: 0.3s;
+
+  li {
+    margin: 10px;
+  }
+}

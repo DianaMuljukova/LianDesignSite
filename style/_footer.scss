@@ -1,0 +1,32 @@
+.footer {
+  padding: 60px 40px;
+
+  &__menu {
+    padding: 20px 0;
+
+    li {
+      margin: 25px;
+
+      i {
+        color: $color;
+
+        &:hover {
+          color: $hover-color;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    padding-bottom: 40px;
+  }
+
+  &__rights {
+    padding-top: 30px;
+  }
+}
+
+.border-footer {
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+}

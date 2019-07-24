@@ -1,0 +1,50 @@
+.story {
+  padding: 70px 0 50px;
+  background-color: #fafafa;
+
+  &__block {
+
+    h3 {
+      font-size: 18px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    margin: 30px 0;
+    color: $color;
+  }
+
+  &__form {
+    margin-top: 30px;
+
+    label {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  animate: 0.2s;
+  border-radius: 0;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background-color: white;
+  border: 5px solid black;
+}
+
+.range-block {
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: -130%;
+  left: 0;
+}
+
+.wrapper-input {
+  position: relative;
+}
