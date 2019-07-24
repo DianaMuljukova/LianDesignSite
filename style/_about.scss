@@ -3,4 +3,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 115px 0;
+
+  @include desktop {
+    background-position: -460px 100%;
+  }
 }

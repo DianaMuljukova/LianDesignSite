@@ -19,6 +19,10 @@
 
   &__logo {
     padding-bottom: 40px;
+
+    @include desktop {
+      text-align: center;
+    }
   }
 
   &__rights {

@@ -25,6 +25,19 @@
       font-weight: 700;
     }
   }
+
+  &__img {
+    @include desktop {
+      width: 100%;
+    }
+  }
+
+  &__range {
+
+    @include desktop {
+      display: none;
+    }
+  }
 }
 
 input[type=range]::-webkit-slider-runnable-track {
@@ -47,4 +60,13 @@ input[type=range]::-webkit-slider-thumb {
 
 .wrapper-input {
   position: relative;
+}
+
+.hidden__range {
+  display: none;
+
+  @include desktop {
+    display: block;
+    margin-top: 40px;
+  }
 }

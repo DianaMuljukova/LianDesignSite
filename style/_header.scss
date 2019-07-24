@@ -9,10 +9,19 @@ ul, li {
 }
 
 .menu {
+  display: flex;
+
+@include mobile {
+   display: block;
+  }
 
   &__item {
     margin-left: 40px;
     position: relative;
+
+    @include mobile {
+      margin-left: 5px;
+    }
 
     a {
       text-transform: uppercase;
@@ -43,6 +52,8 @@ ul, li {
       border: none;
     }
   }
+
+
 }
 
 .search-input {
@@ -63,9 +74,25 @@ ul, li {
 
 .search-block {
   display: none;
+  position: absolute;
+  top: -100%;
+  left: 100%;
+
+
+  @include desktop {
+    z-index: 10;
+    top: 0;
+    left: 45%;
+  }
 }
 
 .fa-times {
   margin-left: 10px;
   cursor: pointer;
 }
+
+.menu__icon {
+  display: none;
+  margin-left: 100%;
+}
+

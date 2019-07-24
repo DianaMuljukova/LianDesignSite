@@ -5,7 +5,7 @@ body, html {
   font-family: 'Roboto', sans-serif;
 }
 
-
+@import "mixins";
 @import "header";
 @import "main-page";
 @import "portfolio";
@@ -21,6 +21,7 @@ body, html {
 @import "info";
 @import "map";
 @import "value";
+
 
 
 

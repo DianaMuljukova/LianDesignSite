@@ -4,6 +4,15 @@
   background-size: cover;
   padding: 260px 0 330px;
   text-align: center;
+  background-position: 0 100%;
+
+  @include desktop {
+    background-position: -640px 100%;
+  }
+
+  @include mobile {
+    background-position: -1340px 100%;
+  }
 
   &__title {
     background-color: black;
